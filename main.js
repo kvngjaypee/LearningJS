@@ -8,11 +8,11 @@
 
 console.log(age);*/
 
-let name;
+let myName;
 
-name = 25;
+myName = "Amaka";
 
-console.log(name);
+console.log(myName);
 
 //Assigning variable with const
 const score = 15;
@@ -82,3 +82,55 @@ console.log(Array.isArray("hello"));
 console.log(fruits.indexOf("oranges"));
 
 console.log(fruits[1]);
+//Object literals
+
+const person = {
+  firstName: "Young",
+  lastName: "Matt",
+  age: 19,
+  hobbies: ["singing", "dancing"],
+  address: {
+    street: "50 moshalashi st",
+    city: "Lagos",
+    state: "Osapa London",
+  },
+};
+console.log(person.hobbies[1]);
+console.log(person.address.city);
+
+person.email = "jondoe@gmail.com";
+
+console.log(person);
+
+//Arrays of object
+const todos = [
+  {
+    id: 1,
+    text: "Take out trash",
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    text: "Responding to mails",
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    text: "Preparation for stand up meeting",
+    isCompleted: false,
+  },
+];
+
+console.log(todos[1].text);
+
+//for loops
+for (let i = 0; i <= 10; i++) {
+  console.log("For Loop Number: ${i}");
+}
+
+//While
+let i = 0;
+while (i < 10) {
+  console.log("While Loop Number: ${i}");
+  i++;
+}
