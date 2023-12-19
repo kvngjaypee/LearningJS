@@ -28,14 +28,14 @@ const age = 30;
 const rating = 4.76;
 const isCool = true;
 const x = null;
-const y = undefined;
+const k = undefined;
 
 //Checking for the data types of the above declared variables
 console.log(typeof x); //object
 console.log(typeof place); //string
 console.log(typeof isCool); //boolean
 console.log(typeof age); //number
-console.log(typeof y); //undefined
+console.log(typeof k); //undefined
 
 //Implementing Concantenation
 
@@ -51,8 +51,8 @@ console.log("My nickname is " + nickName + " and i am " + height + " tall ");
 
 //Implementing the length method
 
-const k = "Hello World!";
-console.log(k.length);
+const m = "Hello World!";
+console.log(m.length);
 
 //Uppercase
 console.log(k.toUpperCase());
@@ -133,4 +133,25 @@ let i = 0;
 while (i < 10) {
   console.log("While Loop Number: ${i}");
   i++;
+}
+
+//forEach, map, filter
+const todoCompleted = todos
+  .filter(function (todo) {
+    return todo.isCompleted === true;
+  })
+  .map(function (todo) {
+    return todo.next;
+  });
+
+console.log(todoCompleted);
+
+//Conditionals
+const y = 25;
+if (y === 25) {
+  console.log("y is 25");
+} else if (y > 25) {
+  console.log("y is greater than 25");
+} else {
+  console.log("y is less than 25");
 }
