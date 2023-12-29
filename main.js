@@ -147,6 +147,7 @@ const todoCompleted = todos
 console.log(todoCompleted);
 
 //Conditionals
+//Implementing the if, else if and else
 const y = 25;
 if (y === 25) {
   console.log("y is 25");
@@ -155,3 +156,27 @@ if (y === 25) {
 } else {
   console.log("y is less than 25");
 }
+
+//Ternary operator
+const v = 10;
+
+const color = v > 10 ? "red" : "blue";
+
+//switch statement
+switch (color) {
+  case "red":
+    console.log("color is red");
+    break;
+  case "blue":
+    console.log("color is blue");
+    break;
+  default:
+    console.log("color is NOT red or blue");
+    break;
+}
+
+//function
+function addNums(num1, num2) {
+  return num1 + num2;
+}
+console.log(addNums(5, 4));
