@@ -180,3 +180,8 @@ function addNums(num1, num2) {
   return num1 + num2;
 }
 console.log(addNums(5, 4));
+
+//Loops
+for (let counter = 0; counter < 4; counter++) {
+  console.log(counter);
+}
